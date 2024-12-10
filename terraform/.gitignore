@@ -1,0 +1,12 @@
+# Игнорировать рабочие файлы Terraform
+.terraform/
+
+# Игнорировать файлы состояния Terraform
+*.tfstate
+*.tfstate.*
+
+# Игнорировать файлы планов Terraform
+*.tfplan
+
+# Игнорировать сгенерированные файлы
+crash.log
