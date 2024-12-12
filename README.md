@@ -4,7 +4,7 @@ commit aefead2207ef7e2aa5dc81a34aedf0cad4c32545
 
 Update CHANGELOG.md
 
-Какому тегу соответствует коммит 85024d3?
+# Какому тегу соответствует коммит 85024d3?
 
 commit 85024d3100126de36331c6982bfaac02cdab9e76 (tag: v0.12.23)
 
@@ -17,7 +17,7 @@ b8d720f8340221f2146e4e4870bf2ee0bc48f2d5
 
 9ea88f22fc6269854151c571162c5bcf958bee2b
 
-Перечислите хеши и комментарии всех коммитов, которые были сделаны между тегами v0.12.23 и v0.12.24.
+# Перечислите хеши и комментарии всех коммитов, которые были сделаны между тегами v0.12.23 и v0.12.24.
 
 commit 33ff1c03bb960b332be3af2e333462dde88b279e (tag: v0.12.24)
 
@@ -63,14 +63,14 @@ Author: Nick Fagerlund nick.fagerlund@gmail.com
 
 Date:   Wed Mar 18 12:30:20 2020 -0700
 
-Найдите коммит, в котором была создана функция func providerSource, её определение в коде выглядит так: func providerSource(...) (вместо троеточия перечислены аргументы).
+# Найдите коммит, в котором была создана функция func providerSource, её определение в коде выглядит так: func providerSource(...) (вместо троеточия перечислены аргументы).
 
 commit 5af1e6234ab6da412fb8637393c5a17a1b293663
 
 commit 8c928e83589d90a031f811fae52a81be7153e82f
 
 
-Найдите все коммиты, в которых была изменена функция globalPluginDirs.
+# Найдите все коммиты, в которых была изменена функция globalPluginDirs.
 
 commit 7c4aeac5f30aed09c5ef3198141b033eea9912be
 
@@ -96,5 +96,5 @@ Author: Anna Winkler 3526523+annawinkler@users.noreply.github.com
 
 Date:   Tue May 3 12:28:41 2022 -0600
 
-Кто автор функции synchronizedWriters?
+# Кто автор функции synchronizedWriters?
 Author: Martin Atkins <mart@degeneration.co.uk>
