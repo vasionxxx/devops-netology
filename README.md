@@ -1,15 +1,22 @@
 # Найдите полный хеш и комментарий коммита, хеш которого начинается на aefea
 
-commit aefead2207ef7e2aa5dc81a34aedf0cad4c32545
+Выполним команду - git show aefea
 
-Update CHANGELOG.md
+Коммит - aefead2207ef7e2aa5dc81a34aedf0cad4c32545
+
+Комментарий - Update CHANGELOG.md
 
 # Какому тегу соответствует коммит 85024d3?
 
-commit 85024d3100126de36331c6982bfaac02cdab9e76 (tag: v0.12.23)
+Выполним команду - git show 85024d3
+
+Коммит соответствует тегу v0.12.23
 
 # Сколько родителей у коммита b8d720? Напишите их хеши.
-3 родителя
+
+Выполним команду - git rev-list --parents -n 1 b8d720
+
+У коммита 3 родителя:
 
 b8d720f8340221f2146e4e4870bf2ee0bc48f2d5 
 
@@ -18,6 +25,10 @@ b8d720f8340221f2146e4e4870bf2ee0bc48f2d5
 9ea88f22fc6269854151c571162c5bcf958bee2b
 
 # Перечислите хеши и комментарии всех коммитов, которые были сделаны между тегами v0.12.23 и v0.12.24.
+
+Выполним команду - git log v0.12.23..v0.12.24
+
+Комментарии коммитов:
 
 commit 33ff1c03bb960b332be3af2e333462dde88b279e (tag: v0.12.24)
 
@@ -53,12 +64,23 @@ Date:   Wed Mar 18 12:30:20 2020 -0700
 
 # Найдите коммит, в котором была создана функция func providerSource, её определение в коде выглядит так: func providerSource(...) (вместо троеточия перечислены аргументы).
 
+Выполним команду - git log -S 'func providerSource'
+
 commit 5af1e6234ab6da412fb8637393c5a17a1b293663
+Author: Martin Atkins <mart@degeneration.co.uk>
+Date:   Tue Apr 21 16:28:59 2020 -0700
 
 commit 8c928e83589d90a031f811fae52a81be7153e82f
+Author: Martin Atkins <mart@degeneration.co.uk>
+Date:   Thu Apr 2 18:04:39 2020 -0700
 
+Функция была создана в 8c928e83589d90a031f811fae52a81be7153e82f
 
 # Найдите все коммиты, в которых была изменена функция globalPluginDirs.
+
+Выполним команду - git log -S 'globalPluginDirs'
+
+Коммиты в которых изменена функция:
 
 commit 7c4aeac5f30aed09c5ef3198141b033eea9912be
 
@@ -85,4 +107,26 @@ Author: Anna Winkler 3526523+annawinkler@users.noreply.github.com
 Date:   Tue May 3 12:28:41 2022 -0600
 
 # Кто автор функции synchronizedWriters?
+
+Выполним команду - git log -S "synchronizedWriters"
+
+ommit bdfea50cc85161dea41be0fe3381fd98731ff786
+
+Author: James Bardin <j.bardin@gmail.com>
+
+Date:   Mon Nov 30 18:02:04 2020 -0500
+
+commit fd4f7eb0b935e5a838810564fd549afe710ae19a
+
+Author: James Bardin <j.bardin@gmail.com>
+
+Date:   Wed Oct 21 13:06:23 2020 -0400
+
+commit 5ac311e2a91e381e2f52234668b49ba670aa0fe5
+
+Author: Martin Atkins <mart@degeneration.co.uk>
+
+Date:   Wed May 3 16:25:41 2017 -0700
+
+Автор:
 Author: Martin Atkins <mart@degeneration.co.uk>
